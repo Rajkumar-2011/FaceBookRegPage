@@ -9,7 +9,7 @@ import UtilityLayer.WebElementsUtils;
 
 public class LoginPage extends BaseClass{
 	public void createAccount(String Fname,String Lname,String Date,String month,
-			String year) {
+			String year,String pass,String cnfpwd) {
 		
 		WebElement Firstname=driver.findElement(By.xpath("//input[@name='firstname']"));
 		WebElementsUtils.sendKeys(Firstname, Fname);
@@ -26,7 +26,12 @@ public class LoginPage extends BaseClass{
 		WebElement yr=driver.findElement(By.xpath("//select[@name='birthday_year']"));
 		HandlesDropDown.selectByVisibleText(yr, year);
 		
-		WebElement pass=driver.findElement(By.xpath(""));
+		WebElement mob=driver.findElement(By.xpath("//input[@id='u_0_h_7F']"));
+		WebElementsUtils.sendKeys(mob, pass);	
+		
+		WebElement confrim=driver.findElement(By.xpath("//input[@type='password']"));
+		WebElementsUtils.sendKeys(confrim, cnfpwd);	
+		
 	
 		
 		

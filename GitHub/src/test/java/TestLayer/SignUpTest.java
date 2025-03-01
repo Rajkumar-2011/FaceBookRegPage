@@ -10,7 +10,7 @@ public class SignUpTest extends BaseClass {
 		Thread.sleep(3000);
 		LoginPage signup=new LoginPage();
 		Thread.sleep(3000);
-		signup.createAccount("Atharva", "Rajkumar", "12", "Nov", "2020");
+		signup.createAccount("Atharva", "Rajkumar", "12", "Nov", "2020","123563269","adam@123");
 		Thread.sleep(3000);
 		driver.quit();
 	}
