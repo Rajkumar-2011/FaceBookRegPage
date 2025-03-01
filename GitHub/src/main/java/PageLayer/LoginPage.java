@@ -26,6 +26,8 @@ public class LoginPage extends BaseClass{
 		WebElement yr=driver.findElement(By.xpath("//select[@name='birthday_year']"));
 		HandlesDropDown.selectByVisibleText(yr, year);
 		
+		WebElement pass=driver.findElement(By.xpath(""));
+	
 		
 		
 	}
